@@ -1,0 +1,11 @@
+body {
+	background-color: antiquewhite;
+}
+
+body.dark {
+	background-color: aquamarine;
+}
+
+/* body.light {
+	background-color: antiquewhite;
+} */
