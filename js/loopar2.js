@@ -27,10 +27,7 @@ function addNewSpice() {
             spiceRack.push(newSpiceName.value);
             spiceRack.sort();
             printSpiceShelf();
-
     }
-   
-
 }
 
 function printSpiceShelf() {

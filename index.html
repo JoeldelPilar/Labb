@@ -1,115 +1,52 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>JS LABB file</title>
-    <meta name="description" content="the LAB">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
 
 <body>
-
-    <button role="button" type="button" class="theme_toggle">Switch color</button>
-
-
-    <h1>Hello world!</h1>
-    <p>Welcome to the JavaScript research Lab.</p>
-
-    <!-- <button id="btn">Klicka på mig!</button>
-
-    <ul>
-        <li>Bilar</li>
-        <li>Motorcyklar</li>
-        <li>Båtar</li>
-    </ul>
-
-    <ol>
-        <li>Spade</li>
-        <li>Hammare</li>
-        <li>Skruvmejsel</li>
-    </ol>
-
-
-    <button id="btn2">don't click</button> -->
-
-
-    <!-- Labb fredag 11 nov + och - -->
-
-    <article>
-        <h2>Munk 1</h2>
-        <span class="price">25</span>
-        <span class="amount">0</span> st <br>
-        <span class="sum">0</span> kr <br>
-        <button data-operator="plus"> + </button>
-        <button data-operator="minus"> - </button>
-    </article>
-
-    <article>
-        <h2>Munk 2</h2>
-        <span class="price">35</span>
-        <span class="amount">0</span> st <br>
-        <span class="sum">0</span> kr <br>
-        <button data-operator="plus"> + </button>
-        <button data-operator="minus"> - </button>
-    </article>
-
-    <article>
-        <h2>Munk 3</h2>
-        <span class="price">45</span>
-        <span class="amount">0</span> st <br>
-        <span class="sum">0</span> kr <br>
-        <button data-operator="plus"> + </button>
-        <button data-operator="minus"> - </button>
-    </article>
-
-    <article>
-        <h2>Munk 4</h2>
-        <span class="price">55</span>
-        <span class="amount">0</span> st <br>
-        <span class="sum">0</span> kr <br>
-        <button data-operator="plus"> + </button>
-        <button data-operator="minus"> - </button>
-    </article>
-
-    <Style>
-        ul {
-            display: flex;
-            flex-direction: column;
-            width: fit-content
+    <style>
+        body {
+            background-color: hsl(249, 16%, 32%);
         }
-    </Style>
-    <ul id="spices"></ul>
 
-    <label>
-        Lägg till krydda
-        <input type="text" id="newSpiceField">
-    </label>
-    <button id="addSpiceBtn">Lägg till</button>
+        .hidden {
+            display: none;
+        }
+    </style>
 
-    <!-- <script src="js/variablar.js" type="text/javascript"></script> -->
-    <!-- <script src="js/dom.js" type="text/javascript"></script> -->
-    <!-- <script src="js/functions.js" type="text/javascript"></script> -->
-    <!-- <script src="js/event.js" type="text/javascript"></script> -->
-    <!-- <script src="js/conditionals.js" type="text/javascript"></script> -->
-    <!-- <script src="js/lektionslabb/fredag_11_nov.js" type="text/javascript"></script> -->
-    <!-- <script src="js/lektionslabb/themeToggle.js" type="text/javascript"></script> -->
-    <!-- <script src="js/array.js" type="text/javascript"></script> -->
-    <!-- <script src="js/loopar.js" type="text/javascript"></script> -->
-    <script src="js/loopar2.js" type="text/javascript"></script>
+    <h1>Quiz</h1>
+
+    <div id="gameDescription"></div>
+
+    <div id="playerDetails">
+        <label>
+            Ditt namn: <input type="text" id="playerNameInput" value="Joel">
+        </label>
+        <button id="startGameBtn">Starta Spelet</button>
+    </div>
+
+    <div id="questionContainer">
+        <div id="questionText"></div>
+        <button id="answer1"></button>
+        <button id="answer2"></button>
+        <button id="answer3"></button>
+    </div>
+
+    <div id="gameOver" class="hidden">
+        Spelet är slut!
+        <p><button id="restartGameBtn">Spela igen</button></p>
+        <p id="pointsContainer"></p>
+    </div>
 
 
 
-
-
-
+    <script src="js/Lektionslabb/tordag_17_nov.js"></script>
 </body>
 
 </html>
