@@ -36,7 +36,7 @@ function printSpiceShelf() {
     for (let i = 0; i < spiceRack.length; i++) { 
         const spiceName = spiceRack[i];
         const spiceNode = document.createElement('li'); 
-        const spiceTextNode = document.createTextNode(spiceName); 
+        const spiceTextNode = document.createTextNode(spiceName); // Nod är ett element i HTML, en textNode kan man tänka ett span runt den texten.
         spiceNode.appendChild(spiceTextNode);
     
         shelf.appendChild(spiceNode);
